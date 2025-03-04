@@ -18,7 +18,7 @@ test('Lấy danh sách khách hàng có tổng tiền đơn hàng > 1000 USD', a
 
     // Dữ liệu mẫu giả lập (ở thực tế sẽ từ API)
     const sampleOrders = [
-        { orderId: 1, customerId: 1, orderAmount: 500 },
+        { orderId: 1, customerId: 1, orderAmount: 1000 },
         { orderId: 2, customerId: 1, orderAmount: 600 },
         { orderId: 3, customerId: 2, orderAmount: 800 },
         { orderId: 4, customerId: 2, orderAmount: 300 },
