@@ -3,17 +3,12 @@ import  {test, expect} from '@playwright/test';
 test('Login thành công vào Metruyencv', async ({page}) => {
     try {
         await page.goto('https://metruyencv.com');
-        await page.route('**/*', (route) => {
-            const url = route.request().url();
-            if (url.includes('ads') || url.includes('tracking') || url.includes('analytics')) {
-                route.abort();
-            } else {
-                route.continue();
-            }
-        });
-        
-        await page.waitForLoadState('domcontentloaded');  // Load DOM thôi, không đợi idle
-        await page.waitForTimeout(3000);  // Chờ thêm 3s cho chắc
+        if (await page.getByText('Verify you are human').isVisible({ timeout: 5000 })) {
+            console.error('❌ Bị chặn bởi Cloudflare anti-bot');
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+            await page.screenshot({ path: `screenshots/cloudflare-block-${timestamp}.png` });
+            throw new Error('Bị chặn bởi Cloudflare anti-bot');
+        }
         
         await page.waitForSelector('div.flex.space-x-2 > button', { timeout: 10000 });
         await page.click('div.flex.space-x-2 > button');
