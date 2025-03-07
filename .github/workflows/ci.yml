@@ -33,6 +33,7 @@ jobs:
 
     - name: Generate Allure Report
       run: |
+        rm -rf allure-report
         npx allure generate allure-results -o allure-report
 
     - name: Upload Playwright HTML Report (Artifact)
@@ -53,31 +54,17 @@ jobs:
 
     # OPTIONAL - Deploy Allure Report to GitHub Pages (for public viewing)
     - name: Deploy Allure Report to GitHub Pages
-      if: success() || failure()
       run: |
-        git config --global user.email "github-actions@github.com"
-        git config --global user.name "github-actions"
-
-        git fetch
-
-        # Tạo branch gh-pages nếu chưa có
-        if ! git ls-remote --exit-code --heads origin gh-pages; then
-          git checkout --orphan gh-pages
-          touch .keep
-          git add .keep
-          git commit -m "Init gh-pages branch"
-          git push origin gh-pages
-        else
-          git checkout gh-pages
-        fi
-
-        # Copy report nếu có
         if [ -d "allure-report" ]; then
-          rm -rf *
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions@github.com"
+          git fetch origin gh-pages || git checkout --orphan gh-pages
+          git checkout gh-pages
+          git rm -rf .
           cp -r allure-report/* .
           git add .
-          git commit -m "Update Allure Report - $(date)" || true
+          git commit -m "Update Allure Report"
           git push origin gh-pages
         else
-          echo "❌ Không tìm thấy allure-report, bỏ qua deploy."
+          echo "⚠️ No allure-report generated, skipping deployment."
         fi
