@@ -12,3 +12,4 @@ export default defineConfig({
         headless: true
     },
 });
+reporter: [['list'], ['allure-playwright']]

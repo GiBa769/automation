@@ -15,4 +15,9 @@ test('Login thành công vào SauceDemo', async ({ page }) => {
     await expect(firstItem).toBeVisible();
 
     console.log('✅ Đăng nhập thành công!');
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    await page.screenshot({ path: `screenshots/screenshot-${timestamp}.png` });
+
+    //await page.screenshot({ path: 'screenshots/login-success.png' });
+
 });
