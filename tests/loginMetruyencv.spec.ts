@@ -2,8 +2,18 @@ import  {test, expect} from '@playwright/test';
 
 test('Login thành công vào Metruyencv', async ({page}) => {
     await page.goto('https://metruyencv.com');
-    await page.waitForLoadState('networkidle');
-    await page.waitForTimeout(3000);
+    await page.route('**/*', (route) => {
+        const url = route.request().url();
+        if (url.includes('ads') || url.includes('tracking') || url.includes('analytics')) {
+            route.abort();
+        } else {
+            route.continue();
+        }
+    });
+    
+    await page.waitForLoadState('domcontentloaded');  // Load DOM thôi, không đợi idle
+    await page.waitForTimeout(3000);  // Chờ thêm 3s cho chắc
+    
     await page.click('div.flex.space-x-2 > button');
     const loginButton = page.getByRole('button', { name: 'Đăng nhập' });
     await expect(loginButton).toBeVisible({ timeout: 1000 });
