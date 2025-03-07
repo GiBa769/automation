@@ -56,10 +56,28 @@ jobs:
       run: |
         git config --global user.email "github-actions@github.com"
         git config --global user.name "github-actions"
+
         git fetch
-        git checkout gh-pages || git checkout --orphan gh-pages
-        rm -rf *
-        cp -r allure-report/* .
-        git add .
-        git commit -m "Update Allure Report - $(date)" || true
-        git push origin gh-pages
+
+        # Tạo branch gh-pages nếu chưa có
+        if ! git ls-remote --exit-code --heads origin gh-pages; then
+          git checkout --orphan gh-pages
+          touch .keep
+          git add .keep
+          git commit -m "Init gh-pages branch"
+          git push origin gh-pages
+        else
+          git checkout gh-pages
+        fi
+
+        # Copy report nếu có
+        if [ -d "allure-report" ]; then
+          rm -rf *
+          cp -r allure-report/* .
+          git add .
+          git commit -m "Update Allure Report - $(date)" || true
+          git push origin gh-pages
+        else
+          echo "❌ Không tìm thấy allure-report, bỏ qua deploy."
+        fi
+
