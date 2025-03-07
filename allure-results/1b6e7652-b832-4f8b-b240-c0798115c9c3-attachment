@@ -1,0 +1,406 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Login thành công vào Metruyencv
+- Location: D:\Work\Playwright\tests\loginMetruyencv.spec.ts:3:5
+
+# Error details
+
+```
+Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('button:has-text("GiBasama")')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('button:has-text("GiBasama")')
+
+    at D:\Work\Playwright\tests\loginMetruyencv.spec.ts:14:63
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - button
+  - link "Logo":
+    - img "Logo"
+  - button "GiBasama":
+    - img "GiBasama"
+- link "undefined":
+  - img "undefined"
+- main:
+  - link "TRUYỆN VỪA ĐỌC":
+    - heading "TRUYỆN VỪA ĐỌC" [level=2]
+  - text: 14 giờ trước
+  - link "Bắt Đầu Đánh Dấu Hoang Cổ Thánh Thể"
+  - text: "Đã đọc: 2056/3898"
+  - button "x"
+  - text: 19 ngày trước
+  - link "Vạn Cổ Thần Đế"
+  - text: "Đã đọc: 4641/4641"
+  - button "x"
+  - text: 19 ngày trước
+  - link "Đỉnh Cấp Khí Vận, Lặng Lẽ Tu Luyện Ngàn Năm"
+  - text: "Đã đọc: 1193/1193"
+  - button "x"
+  - text: 19 ngày trước
+  - link "Vô Thượng Thần Đế"
+  - text: "Đã đọc: 6219/6290"
+  - button "x"
+  - text: 19 ngày trước
+  - link "Gamer Xưng Bá Dị Giới"
+  - text: "Đã đọc: 194/1056"
+  - button "x"
+  - link "BTV ĐỀ CỬ":
+    - heading "BTV ĐỀ CỬ" [level=2]
+  - group "1 / 5":
+    - link "Vô Thượng Thần Đế Poster":
+      - img "Vô Thượng Thần Đế Poster"
+    - link "Vô Thượng Thần Đế"
+    - text: Hàng vạn hàng nghìn đại thế giới, cường giả như rừng . Nhất đại Tiên Vương Mục Vân, trọng sinh đến một cái phải chịu khi dễ con tư sinh ...
+    - link "Oa Ngưu Cuồng Bôn"
+    - link "Huyền Huyễn"
+    - link "Đạo Giới Thiên Hạ Poster":
+      - img "Đạo Giới Thiên Hạ Poster"
+    - link "Đạo Giới Thiên Hạ"
+    - text: Thần bí trong thôn lạc đi ra thiếu niên thần bí, đạo tâm không có, đạo linh không thấu, đạo thể không thông, lại một lòng cầu đạo, bái nhập ...
+    - link "Dạ Hành Nguyệt"
+    - link "Huyền Huyễn"
+    - link "Quạ Tại Tây Du, Từ Cướp Đoạt Từ Điều Bắt Đầu Tiến Hóa Poster":
+      - img "Quạ Tại Tây Du, Từ Cướp Đoạt Từ Điều Bắt Đầu Tiến Hóa Poster"
+    - link "Quạ Tại Tây Du, Từ Cướp Đoạt Từ Điều Bắt Đầu Tiến Hóa"
+    - text: Ngu Thất Dạ đi vào Tây Du thế giới trở thành một cái quạ đen tinh, càng là mở ra thiên mệnh từ điều. Thao phong —— ngự phong —— khống ...
+    - link "Nan Ngôn Đích Dạ"
+    - link "Tiên Hiệp"
+  - group "2 / 5":
+    - link "Ta Tại Nhà Trẻ Giả Vờ Tu Tiên Poster":
+      - img "Ta Tại Nhà Trẻ Giả Vờ Tu Tiên Poster"
+    - link "Ta Tại Nhà Trẻ Giả Vờ Tu Tiên"
+    - text: Xuyên qua tiên hiệp thế giới thất bại, vừa mở mắt vậy mà biến thành tiểu hài tử đồng thời còn tại trên nhà trẻ. Không có cách, đã như vậy ...
+    - link "Lâm Ngoại Hữu Lâm"
+    - link "Light Novel"
+    - link "Phổ La Chi Chủ Poster":
+      - img "Phổ La Chi Chủ Poster"
+    - link "Phổ La Chi Chủ"
+    - text: Hai đầu đường ray, xông vào sân, hơi nước xe lửa, phá cửa mà vào. Mặc sườn xám ca nữ, ăn mười cân màn thầu, đạp lên đường ray, gào thét ...
+    - link "Sa Lạp Cổ Tư"
+    - link "Huyền Huyễn"
+    - link "Ta Thật Không Có Nghĩ Hạ Cờ Vây A! Poster":
+      - img "Ta Thật Không Có Nghĩ Hạ Cờ Vây A! Poster"
+    - link "Ta Thật Không Có Nghĩ Hạ Cờ Vây A!"
+    - text: Cờ vây tuyển thủ quốc gia Du Thiệu xuyên qua đến thế giới song song, trở thành một cái lớp mười học sinh, sống lại một đời, hắn chỉ muốn ...
+    - link "Sơn Trung Thổ Khối"
+    - link "Đô Thị"
+  - group "3 / 5":
+    - 'link "Hồng Kông: Ngươi Hồng Hưng Tử, Từ Thiện Đại Vương Cái Quỷ Gì Poster"':
+      - 'img "Hồng Kông: Ngươi Hồng Hưng Tử, Từ Thiện Đại Vương Cái Quỷ Gì Poster"'
+    - 'link "Hồng Kông: Ngươi Hồng Hưng Tử, Từ Thiện Đại Vương Cái Quỷ Gì"'
+    - text: Quan Tổ xuyên qua trở thành Hồng Hưng đại lão b thủ hạ tiểu đệ, kết quả đạt được "Từ Thiện chi vương hệ thống" . Ta thân phận này, muốn ...
+    - link "Bì Bì Thụ"
+    - link "Đô Thị"
+    - 'link "Toàn Dân Ngự Thú: Bắt Đầu Giác Tỉnh Thần Thoại Cấp Thiên Phú Poster"':
+      - 'img "Toàn Dân Ngự Thú: Bắt Đầu Giác Tỉnh Thần Thoại Cấp Thiên Phú Poster"'
+    - 'link "Toàn Dân Ngự Thú: Bắt Đầu Giác Tỉnh Thần Thoại Cấp Thiên Phú"'
+    - text: "Vinh danh Minh Chủ: Thịnh ngốc « B.faloo mạng tiểu thuyết độc nhất vô nhị ký hợp đồng tiểu thuyết: Toàn dân ngự thú: Bắt đầu giác tỉnh Thần ..."
+    - link "Nhất Thế Lưu Ly"
+    - link "Huyền Huyễn"
+    - 'link "Lol: Ta Có Thể Nghe Được Địch Quân Trò Chuyện Mật Trong Pt! Poster"':
+      - 'img "Lol: Ta Có Thể Nghe Được Địch Quân Trò Chuyện Mật Trong Pt! Poster"'
+    - 'link "Lol: Ta Có Thể Nghe Được Địch Quân Trò Chuyện Mật Trong Pt!"'
+    - text: "Trùng sinh đến S11 thời kỳ, gia nhập IG . À? Trong lỗ tai như thế nào đều là đối với trước mặt nói chuyện phiếm! ? Giang Chu: The Shy, đối ..."
+    - link "Hồng Diệp Bạch Mã"
+    - link "Cạnh Kỹ"
+  - group "4 / 5":
+    - 'link "Tổng Võ: Người Tại Tương Dương, Hóa Thân Tào Tặc Liền Trở Nên Mạnh Poster"':
+      - 'img "Tổng Võ: Người Tại Tương Dương, Hóa Thân Tào Tặc Liền Trở Nên Mạnh Poster"'
+    - 'link "Tổng Võ: Người Tại Tương Dương, Hóa Thân Tào Tặc Liền Trở Nên Mạnh"'
+    - text: Khương Trần xuyên qua tổng võ thế giới hai mươi năm, trở thành Tương Dương Thành Chủ Phủ hộ Vệ Phó Thống Lĩnh! Một khi thức tỉnh trí nhớ kiếp trước, ...
+    - link "Mãn Viên Xuân Sắc Quan Bất Trụ"
+    - link "Đồng Nhân"
+    - link "Nữ Đế Tọa Hạ Đệ Nhất Chó Săn Poster":
+      - img "Nữ Đế Tọa Hạ Đệ Nhất Chó Săn Poster"
+    - link "Nữ Đế Tọa Hạ Đệ Nhất Chó Săn"
+    - text: 【 xuyên qua thành Nữ Đế bên người nhân vật phản diện về sau, ta quyết định đi đến quyền lực đỉnh phong 】 Ăn cơm nhà nước Triệu Đô ...
+    - link "Thập Vạn Thái Đoàn"
+    - link "Huyền Huyễn"
+    - link "Trọng Sinh Tám Mốt Đánh Cá Và Săn Bắt Tây Bắc Poster":
+      - img "Trọng Sinh Tám Mốt Đánh Cá Và Săn Bắt Tây Bắc Poster"
+    - link "Trọng Sinh Tám Mốt Đánh Cá Và Săn Bắt Tây Bắc"
+    - text: Mang theo ở kiếp trước rất nhiều tiếc nuối Lý Long, trọng sinh về tới năm tám mốt. Một năm này, thổ địa còn không có chịu trách nhiệm cho đến ...
+    - link "Cơ Trung Mã"
+    - link "Đô Thị"
+  - group "5 / 5":
+    - link "Ta Một Người Cảnh Sát, Làm Sao Cho Ta Tội Phạm Hệ Thống! Poster":
+      - img "Ta Một Người Cảnh Sát, Làm Sao Cho Ta Tội Phạm Hệ Thống! Poster"
+    - link "Ta Một Người Cảnh Sát, Làm Sao Cho Ta Tội Phạm Hệ Thống!"
+    - text: Tô Minh xuyên qua đến thế giới song song, trở thành một tên tốt nghiệp trường cảnh sát sinh. Thân cao 2m2, thể trọng 400 cân, khí chất càng là ...
+    - link "Tiểu Tiểu Đại Hán"
+    - link "Đô Thị"
+    - link "Ta Tại Phàm Nhân Khoa Học Tu Tiên Poster":
+      - img "Ta Tại Phàm Nhân Khoa Học Tu Tiên Poster"
+    - link "Ta Tại Phàm Nhân Khoa Học Tu Tiên"
+    - text: Lạc Hồng đứng tại Hoàng Phong cốc sơn môn trước, giờ phút này hắn không thể không thừa nhận tự mình xuyên qua đến « phàm nhân » sự thật. Đẩy ...
+    - link "Lạc Thanh Tử"
+    - link "Huyền Huyễn"
+    - 'link "Fairy Tail: Ta Mới Không Muốn Làm Hội Trưởng Poster"':
+      - 'img "Fairy Tail: Ta Mới Không Muốn Làm Hội Trưởng Poster"'
+    - 'link "Fairy Tail: Ta Mới Không Muốn Làm Hội Trưởng"'
+    - text: Mở ra đi, liên thông Runeterra cánh cửa! A? Cua sông? Mở ra đi, liên thông Runeterra cánh cửa! A? Ba sói? Đằng sau sẽ không là. . . Quả nhiên là sáu chim. ...
+    - link "Tưởng Cật Băng Bổng"
+    - link "Đồng Nhân"
+  - link "undefined":
+    - img "undefined"
+  - link "Thời gian thực":
+    - heading "Thời gian thực" [level=2]
+  - img "rank-1"
+  - link "Ta Ở Trong Game Thăng Cấp"
+  - text: 167 người đang đọc Phủ Sơn Đồ Thư Quán Đô Thị
+  - link "Ta Ở Trong Game Thăng Cấp":
+    - img "Ta Ở Trong Game Thăng Cấp"
+  - img
+  - link "Từ Tầm Bảo Nhắc Nhở Bắt Đầu Thành Thần"
+  - text: "90"
+  - img
+  - link "Mục Thần Ký"
+  - text: 74 4
+  - 'link "Linh Khí Hồi Phục: Một Giấc Chiêm Bao Vạn Năm, Ta Quét Ngang Loạn Thế!"'
+  - text: 65 5
+  - link "Trận Hỏi Trường Sinh"
+  - text: 61 6
+  - link "Nô Lệ Bóng Tối"
+  - text: 61 7
+  - 'link "Toàn Dân Chuyển Chức: Tử Linh Pháp Sư! Ta Tức Là Thiên Tai"'
+  - text: 59 8
+  - link "Ta, Ta Ta Ta Ta Ta, Đến Từ Thời Không Khác Nhau"
+  - text: 59 9
+  - link "Cẩu Thả Tại Nữ Ma Đầu Bên Người Vụng Trộm Tu Luyện"
+  - text: 51 10
+  - link "Lấn Đệ Tử Ta, Ngươi Thật Sự Cho Rằng Ta Chỉ Biết Dạy Học?"
+  - text: "49"
+  - link "Top Đề Cử":
+    - heading "Top Đề Cử" [level=2]
+  - img "rank-1"
+  - link "Xích Tâm Tuần Thiên"
+  - text: 577 Tình Hà Dĩ Thậm Tiên Hiệp
+  - link "Xích Tâm Tuần Thiên Poster":
+    - img "Xích Tâm Tuần Thiên Poster"
+  - img "rank-2"
+  - link "Trận Hỏi Trường Sinh"
+  - text: "367"
+  - img "rank-3"
+  - link "Nô Lệ Bóng Tối"
+  - text: 361 4
+  - link "Cẩu Thả Thành Thánh Nhân, Tiên Quan Triệu Ta Chăm Ngựa"
+  - text: 350 5
+  - link "Nguyên Thủy Pháp Tắc"
+  - text: 184 6
+  - link "Quang Âm Chi Ngoại"
+  - text: 177 7
+  - link "Trở Lại 1982 Làng Chài Nhỏ"
+  - text: 177 8
+  - link "Ta Có Một Thân Bị Động Kỹ"
+  - text: 175 9
+  - link "Trọng Sinh Thường Ngày Tu Tiên"
+  - text: 159 10
+  - link "Luân Hồi Nhạc Viên"
+  - text: "157"
+  - link "VỪA LÊN CHƯƠNG":
+    - heading "VỪA LÊN CHƯƠNG" [level=2]
+  - link "Ta Cho Tử Thần Khi Lão Đại"
+  - text: Thất Kỳ Chương 624 Đô Thị một phút trước
+  - 'link "Xã Súc Nghịch Tập: Theo Tiểu Mễ Bắt Đầu Phản Quyển Hỗ Liên"'
+  - text: Ai Thích Đích Lão Thần Chương 369 Đô Thị 2 phút trước
+  - link "Trường Sinh Giới"
+  - text: Thần Đông Chương 720 Huyền Huyễn 2 phút trước
+  - 'link "Game Of Thrones: Thanh Đồng Cùng Hỏa Chi Vương"'
+  - text: Phòng Chu Chu Chương 206 Đồng Nhân 3 phút trước
+  - link "Đừng Giả Bộ, Đạo Trưởng Ngươi Chính Là Tại Tu Tiên"
+  - text: Ngu Nhân Thuyết Mộng 1 Chương 236 Đô Thị 3 phút trước
+  - link "Chi Vạn Cổ Đệ Nhất Cương Thi"
+  - text: 12 Tiểu Thời Thụy Miên Chương 1583 Huyền Huyễn 3 phút trước
+  - link "Ta Lúc Tuổi Già Thánh Thể, Chứng Đại Đế Ngàn Tỉ Lần"
+  - text: Phi Hoàng Chương 245 Huyền Huyễn 3 phút trước
+  - 'link "Đại Tần: Bắt Đầu Kim Bảng Ra Ánh Sáng, Tổ Long Cầu Ta Đăng Cơ"'
+  - text: Khắc Chu Cầu Kiếm Chương 852 Dã Sử 3 phút trước
+  - link "Võ Đạo Đan Đế"
+  - text: Thiêu Khảo Tây Qua Chương 691 Huyền Huyễn 3 phút trước
+  - link "Từ Võ Thánh Bắt Đầu"
+  - text: Năng Ưu Tư Đặc Chương 685 Tiên Hiệp 3 phút trước
+  - link "undefined":
+    - img "undefined"
+  - link "MỚI HOÀN THÀNH":
+    - heading "MỚI HOÀN THÀNH" [level=2]
+  - group "1 / 10":
+    - 'link "Quan Trường: Ta Viết Lại Nhân Sinh Kịch Bản Poster"':
+      - 'img "Quan Trường: Ta Viết Lại Nhân Sinh Kịch Bản Poster"'
+    - 'link "Quan Trường: Ta Viết Lại Nhân Sinh Kịch Bản"'
+  - group "2 / 10":
+    - link "Trước Dùng Phía Sau Giao, Ta Có Thể Mượn Đến Đại Thừa Kỳ Tu Vi Poster":
+      - img "Trước Dùng Phía Sau Giao, Ta Có Thể Mượn Đến Đại Thừa Kỳ Tu Vi Poster"
+    - link "Trước Dùng Phía Sau Giao, Ta Có Thể Mượn Đến Đại Thừa Kỳ Tu Vi"
+  - group "3 / 10":
+    - link "Người Làm Trái Quy Tắc Của Trò Chơi Tận Thế Poster":
+      - img "Người Làm Trái Quy Tắc Của Trò Chơi Tận Thế Poster"
+    - link "Người Làm Trái Quy Tắc Của Trò Chơi Tận Thế"
+  - group "4 / 10":
+    - 'link "Dragon Ball: Từ Thoát Đi Hành Tinh Vegeta Bắt Đầu Poster"':
+      - 'img "Dragon Ball: Từ Thoát Đi Hành Tinh Vegeta Bắt Đầu Poster"'
+    - 'link "Dragon Ball: Từ Thoát Đi Hành Tinh Vegeta Bắt Đầu"'
+  - group "5 / 10":
+    - link "Đệ Đệ Ta Là Thiên Tuyển Chi Tử Poster":
+      - img "Đệ Đệ Ta Là Thiên Tuyển Chi Tử Poster"
+    - link "Đệ Đệ Ta Là Thiên Tuyển Chi Tử"
+  - group "6 / 10":
+    - link "Mô Phỏng 10 Vạn Lần, Ta Tại Cổ Kim Tương Lai Đều Vô Địch Poster":
+      - img "Mô Phỏng 10 Vạn Lần, Ta Tại Cổ Kim Tương Lai Đều Vô Địch Poster"
+    - link "Mô Phỏng 10 Vạn Lần, Ta Tại Cổ Kim Tương Lai Đều Vô Địch"
+  - group "7 / 10":
+    - link "Từ Bỏ Vạn Ức Gia Sản, Nhập Ngũ Sau Nữ Thần Gấp Khóc Poster":
+      - img "Từ Bỏ Vạn Ức Gia Sản, Nhập Ngũ Sau Nữ Thần Gấp Khóc Poster"
+    - link "Từ Bỏ Vạn Ức Gia Sản, Nhập Ngũ Sau Nữ Thần Gấp Khóc"
+  - group "8 / 10":
+    - link "Sủng Thú Chi Chủ Poster":
+      - img "Sủng Thú Chi Chủ Poster"
+    - link "Sủng Thú Chi Chủ"
+  - group "9 / 10":
+    - link "Mở Đầu Sống Lại Hư Không Đại Đế, Các Chí Tôn Đã Tê Cả Người Poster":
+      - img "Mở Đầu Sống Lại Hư Không Đại Đế, Các Chí Tôn Đã Tê Cả Người Poster"
+    - link "Mở Đầu Sống Lại Hư Không Đại Đế, Các Chí Tôn Đã Tê Cả Người"
+  - group "10 / 10":
+    - link "Lựa Chọn C Cấp Anh Hùng, Ta Bị Khắp Internet Chế Giễu Ba Năm Poster":
+      - img "Lựa Chọn C Cấp Anh Hùng, Ta Bị Khắp Internet Chế Giễu Ba Năm Poster"
+    - link "Lựa Chọn C Cấp Anh Hùng, Ta Bị Khắp Internet Chế Giễu Ba Năm"
+  - link "ĐÁNH GIÁ MỚI":
+    - heading "ĐÁNH GIÁ MỚI" [level=2]
+  - article:
+    - img "Masenella Lisa"
+    - paragraph:
+      - text: Masenella Lisađã đánh giá
+      - 'link "Trò Chơi Tử Vong : Bắt Đầu Lừa Gạt Sư, Đóng Giả Thần Minh"'
+    - text: "5"
+    - paragraph: "Nhân vật: Thông minh Cốt truyện: Logic Thế giới: Thập giới Highly recommend bộ này nha. Nhân vật chính siêu thông minh, tính cách trầm ổn, làm việc gì cũng chuẩn bị đầy đủ, lên kế hoạch kỹ càng. Các sự kiện đều hợp lý, nhân vật phụ cũng được đầu tư công phu, tóm lại là đỉnh của chóp luôn. Đặc biệt, bộ này còn là bản dịch, phù hợp với những người mới đọc, những người không đọc được hay không thích đọc truyện convert. Trans dịch rất có tâm, dễ hiểu, tuy nhiên đôi khi vẫn còn vài từ ngữ trans vẫn để nguyên từ gốc mà chưa dịch, mong trans cải thiện."
+    - button "0 Thích"
+    - text: 17 giờ trước
+  - article:
+    - img "GSVLa73832"
+    - paragraph:
+      - text: GSVLa73832đã đánh giá
+      - 'link "Chiến Tranh Lãnh Chúa: Vạn Tộc Chi Vương"'
+    - text: "5"
+    - paragraph: Nói chung truyện hay, thể loại tây huyễn khá ít người làm (cơ bản ít người đọc) nên khen cho cv có động lực làm bộ này còn làm thêm bộ khác. 1. Các nhân vật phụ (nữ) đều được tác dùng nhiều ngòi bút miêu tả nên khá có hồn. Đám nhân vật nam thì chỉ đá qua qua không ấn tượng mấy. 2. Điều cốt lõi quan trọng nhất của mấy bộ lãnh chúa là "xây dựng thế lực có ích với main" thì bộ này tác làm được. Chứ còn mấy bộ lãnh chúa xây ra một đống thế lực nhưng có địch nhân là 1 mình main địch hết, việc gì cũng đến tay thì truyện có hay đến mấy cũng vứt. 3. Tính cách main "lười" mà hoàn cảnh đưa đẩy không cho lười, mạnh miệng nhưng chịu hi sinh vì thứ mình yêu. 4. Phong cách viết truyện của tác có tình người, không kiểu ch.ết nữ, ch.ết bạn tế thiên buff sức mạnh. Mặc dù viết vậy khó chạm đến sự thấu cảm của độc giả hơn nhưng đọc thỏa mái. Còn viết kiểu văn hiến tế người đọc dễ nhập tâm hơn mà đọc vậy ngột ngạt thiếu tính giải trí. 5. Hiện tại tôi mới thẩm hơn 300c thì thấy main thăng tiến sức mạnh khá rùa bò, cũng không thấy điểm nổi bật gì trong sức mạnh của main. Tác chưa làm tốt vụ này khiến người đọc không đạt được sự cực khoái dễ vì truyện bình bình mà bỏ. Nhìn chung thì đây là một bộ tây huyễn ổn, với fan tây huyễn như tôi thì thấy nó đáng để đọc.
+    - button "1 Thích"
+    - text: 18 giờ trước
+  - article:
+    - img "Ri Nguyễn"
+    - paragraph:
+      - text: Ri Nguyễnđã đánh giá
+      - 'link "Mù Lòa Tróc Đao Nhân: Bắt Đầu Max Cấp Cửu Dương Thần Công"'
+    - text: "5"
+    - paragraph: truyện khá là hay, ngoại trừ việc hệ thống buff có phần hỗn tạp chút thì còn lại đọc rất là cuốn. Ko có trang bức, cẩu huyết hay não tàn, ngược lại truyện thể hiện dc rất tốt cái chất của giang hồ. Huynh muội săn sóc và đùm bọc lẫn nhau, cùng nhau lăn lộn giang hồ, main đi đâu cũng mang theo muội muội đi, tình cảm huynh muội dc thể hiện rất tốt qua những cái vuốt đầu, những cuộc trò chuyện rất cởi mở gần gũi tạo nên không khí nhẹ nhàng thoải mái. Các tình tiết truyện có sự điều tiết rất tốt ko tạo nên sự gấp gáp, dồn dập giữa các sự kiện lẫn nhau. Những cuộc truy lùng tội phạm dc lồng ghép rất khéo léo vào các sự kiện giang hồ tạo nên sự mới mẻ, ko nhàm chán. Truyện đọc 1 lèo đến mấy chương mới nhất vẫn thấy thòm thèm, thực sự là đáng đọc.
+    - button "0 Thích"
+    - text: 20 giờ trước
+  - article:
+    - img "người thổi sáo"
+    - paragraph:
+      - text: người thổi sáođã đánh giá
+      - link "Từ Dã Pháp Sư Đến Vu Sư Vương"
+    - text: "5"
+    - paragraph: "Nhân vật: nhân vật chính tỉnh táo bình thản, hắn lúc đầu cho rằng bản thân là kẻ ngoại lai nên đối với mọi thứ đều hờ hững xem thường, chỉ là về sau hắn quyết định thay đổi thế giới này theo ý mình Cốt truyện: chuyển sinh vào trò chơi làm vu sư, biết hầu hết mọi thứ trong game. Nhân vật chính không ngại tác động vào lịch sử mà không sợ mất ưu thế của bản thân. đây là hành trình từ dã vu sư tới xây dựng đất nước Thế giới: bối cảnh ổn, các nước cũng nhiều đặc điểm riêng nói chung là truyện hay, tuy lúc đầu hơi chậm do main không có mục tiêu nỗ lực nên chỉ sống một cách bình đạm. main chán ghét thế giới nơi mà ai có quyền lực cũng có thể đè bẹp kẻ khác, nên hắn cũng không quan trọng việc tăng sức mạnh hay tuổi thọ. sau này main lại có động lực thay đổi thế giới, rồi main đi tham qua chiến tranh thành lập quốc gia. nói chung truyện khá hay, nội dung cũng ít sạn"
+    - button "1 Thích"
+    - text: 21 giờ trước
+- contentinfo:
+  - text: Mê Truyện Chữ là nền tảng mở trực tuyến, miễn phí đọc truyện chữ được đóng góp nội dung từ các tác giả viết truyện và các dịch giả convert, dịch truyện, rất nhiều truyện hay và nổi bật được cập nhật nhanh nhất với đủ các thể loại tiên hiệp, kiếm hiệp, huyền ảo ...
+  - img "Logo"
+  - link "Điều khoản dịch vụ"
+  - link "Chính sách bảo mật"
+  - link "Về bản quyền"
+  - link "Hướng dẫn sử dụng"
+- dialog:
+  - button
+  - button "Close panel"
+  - img "GiBasama"
+  - heading "GiBasama" [level=2]:
+    - link "GiBasama"
+  - link "0"
+  - button "Thoát"
+  - list:
+    - listitem:
+      - link "Nâng cấp tài khoản new":
+        - text: Nâng cấp tài khoản
+        - img "new"
+    - listitem:
+      - link "Tủ truyện của tôi"
+    - listitem:
+      - link "Lịch sử giao dịch"
+    - listitem:
+      - link "Cài đặt cá nhân"
+    - listitem:
+      - link "Yêu cầu hỗ trợ"
+  - img "KNBs"
+  - text: 0 0
+  - img "candy"
+  - text: 0 0
+  - link "Nạp KNBs":
+    - text: Nạp
+    - img "KNBs"
+  - heading "Đăng truyện" [level=3]:
+    - img
+    - link "Đăng truyện"
+  - heading "Kho truyện" [level=3]:
+    - img
+    - link "Kho truyện"
+  - list:
+    - listitem:
+      - link "Truyện mới"
+    - listitem:
+      - link "Truyện full"
+  - heading "Xếp hạng" [level=3]:
+    - img
+    - link "Xếp hạng"
+  - list:
+    - listitem:
+      - link "Xếp hạng lượt đọc"
+    - listitem:
+      - link "Xếp hạng đề cử"
+    - listitem:
+      - link "Xếp hạng tặng thưởng"
+    - listitem:
+      - link "Xếp hạng bình luận"
+  - heading "Thời gian thực" [level=3]:
+    - img
+    - link "Thời gian thực"
+  - heading "Đánh giá mới" [level=3]:
+    - img
+    - link "Đánh giá mới"
+```
+
+# Test source
+
+```ts
+   1 | import  {test, expect} from '@playwright/test';
+   2 |
+   3 | test('Login thành công vào Metruyencv', async ({page}) => {
+   4 |     await page.goto('https://metruyencv.com');
+   5 |     await page.click('div.flex.space-x-2 > button');
+   6 |     const loginButton = page.getByRole('button', { name: 'Đăng nhập' });
+   7 |     await expect(loginButton).toBeVisible({ timeout: 1000 });
+   8 |     await loginButton.click();
+   9 |     const loginPopup = page.locator('div.bg-panel').filter({ has:page.locator('h3',{hasText: 'Đăng nhập' })});
+  10 |     await expect(loginPopup).toBeVisible({ timeout: 1000 });
+  11 |     await loginPopup.getByPlaceholder('email').fill('mr.zb.gb@gmail.com');
+  12 |     await loginPopup.getByPlaceholder('password').fill('GBPha@150611@');
+  13 |     await loginPopup.getByRole('button', { name: 'Đăng nhập' }).click();
+> 14 |     await expect(page.locator('button:has-text("GiBasama")')).toBeVisible({ timeout: 5000 });
+     |                                                               ^ Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+  15 |     console.log('✅ Đăng nhập thành công!');
+  16 |     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  17 |     await page.screenshot({ path: `screenshots/screenshot-${timestamp}.png` });
+  18 | }); 
+```
