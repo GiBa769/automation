@@ -6,10 +6,10 @@ export default defineConfig({
     expect: {
         timeout: 5000
     },
-    reporter: 'html',
     use: {
         browserName: 'chromium',
         headless: true
     },
+    reporter: [['html'], ['list'], ['allure-playwright']],
 });
-reporter: [['list'], ['allure-playwright']]
+
