@@ -11,8 +11,5 @@ export default defineConfig({
         headless: true
     },
     reporter: [['list'], ['allure-playwright'], ['html']],
-    use: {
-        headless: true,
-    },
 });
 
