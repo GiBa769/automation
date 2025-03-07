@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: allure-report
-          path: allure-report
+          path: allure-report/
 
       # OPTIONAL - Deploy Allure Report to GitHub Pages (for public viewing)
       - name: Deploy Allure Report to GitHub Pages
