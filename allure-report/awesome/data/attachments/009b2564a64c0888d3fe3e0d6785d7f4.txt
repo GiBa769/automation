@@ -1,0 +1,4 @@
+Danh sách khách hàng có tổng tiền > 1000 USD: [
+  { customerId: 1, customerName: 'John Doe', totalSpent: 1600 },
+  { customerId: 2, customerName: 'Jane Smith', totalSpent: 1100 }
+]
