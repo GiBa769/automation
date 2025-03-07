@@ -2,6 +2,8 @@ import  {test, expect} from '@playwright/test';
 
 test('Login thành công vào Metruyencv', async ({page}) => {
     await page.goto('https://metruyencv.com');
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(3000);
     await page.click('div.flex.space-x-2 > button');
     const loginButton = page.getByRole('button', { name: 'Đăng nhập' });
     await expect(loginButton).toBeVisible({ timeout: 1000 });
