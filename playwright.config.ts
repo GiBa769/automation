@@ -10,7 +10,6 @@ export default defineConfig({
         browserName: 'chromium',
         headless: true
     },
-    reporter: [['html'], ['list'], ['allure-playwright']],
     reporter: [['list'], ['allure-playwright'], ['html']],
     use: {
         headless: true,
