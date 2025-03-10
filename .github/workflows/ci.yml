@@ -58,13 +58,21 @@ jobs:
         if [ -d "allure-report" ]; then
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions@github.com"
+          
+          # Reset nhánh gh-pages tránh lỗi checkout
           git fetch origin gh-pages || git checkout --orphan gh-pages
-          git checkout gh-pages
-          git rm -rf .
+          git checkout gh-pages || git checkout --orphan gh-pages
+          
+          # Xóa nội dung cũ để tránh file lỗi
+          git rm -rf . > /dev/null 2>&1
+          
+          # Copy báo cáo mới
           cp -r allure-report/* .
+          
+          # Đẩy lên GitHub Pages
           git add .
-          git commit -m "Update Allure Report"
-          git push origin gh-pages
+          git commit -m "Update Allure Report" || echo "No changes to commit"
+          git push origin gh-pages --force
         else
           echo "⚠️ No allure-report generated, skipping deployment."
         fi
