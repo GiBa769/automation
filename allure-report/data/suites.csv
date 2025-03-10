@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","10","Đếm số dòng chứa ERROR và ghi ra file","","Mon Mar 10 15:30:15 ICT 2025","passed","Mon Mar 10 15:30:15 ICT 2025","","logProcessor.spec.ts","",""
+"","8912","Login thành công vào giba.great-site.net","","Mon Mar 10 15:30:15 ICT 2025","passed","Mon Mar 10 15:30:24 ICT 2025","","loginGibasite.spec.ts","",""
+"","674","Lấy danh sách khách hàng có tổng tiền đơn hàng > 1000 USD","","Mon Mar 10 15:30:15 ICT 2025","passed","Mon Mar 10 15:30:15 ICT 2025","","ordersQuery.spec.ts","",""
+"","1096","Login thành công vào SauceDemo","","Mon Mar 10 15:30:15 ICT 2025","passed","Mon Mar 10 15:30:16 ICT 2025","","sauceLogin.spec.ts","",""
+"","601","Verify post title from JSONPlaceholder API","","Mon Mar 10 15:30:15 ICT 2025","passed","Mon Mar 10 15:30:15 ICT 2025","","apiTest.spec.ts","",""
