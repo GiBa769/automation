@@ -34,7 +34,7 @@ test('Login thành công vào giba.great-site.net', async ({ page }) => {
         // Chụp ảnh màn hình khi đăng nhập thành công
         await page.screenshot({ path: `screenshots/login-success-${timestamp}.png` });
 
-        console.log('✅ Đăng nhập thành công!');
+        console.log('✅ Đăng nhập thành công! See attachment for more details');
     } catch (e) {
         console.error('❌ Test failed:', e);
         if (!page.isClosed()) {
