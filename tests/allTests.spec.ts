@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 import "./apiTest.spec";
 //import "./logProcessor.spec";
-//import "./loginGibasite.spec";
+import "./loginGibasite.spec";
 //import "./ordersQuery.spec";
 //import "./sauceLogin.spec";
 import "./weatherHCM.spec";
