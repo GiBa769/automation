@@ -1,0 +1,8 @@
+[
+    { "email": "eve.holt@reqres.in", "password": "pistol" },
+    { "email": "george.bluth@reqres.in", "password": "test123" },
+    { "email": "janet.weaver@reqres.in", "password": "securePass" },
+    { "email": "user1@example.com", "password": "Password123" },
+    { "email": "user2@example.com", "password": "Password234" }
+  ]
+  
