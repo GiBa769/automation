@@ -1,0 +1,8 @@
+📌 Đang gửi 5 request đăng ký...
+✅ Đăng ký thành công: 3 user
+   - 1: eve.holt@reqres.in
+   - 2: george.bluth@reqres.in
+   - 3: janet.weaver@reqres.in
+🚨 Đăng ký thất bại: 2 user
+   - 1: user1@example.com (Status: 400) ➝ Error: {"error":"Note: Only defined users succeed registration"}
+   - 2: user2@example.com (Status: 400) ➝ Error: {"error":"Note: Only defined users succeed registration"}

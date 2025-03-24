@@ -1,0 +1,9 @@
+🌤 Thời tiết TP.HCM: {
+  time: '2025-03-24T09:30',
+  interval: 900,
+  temperature: 31.9,
+  windspeed: 12.9,
+  winddirection: 153,
+  is_day: 1,
+  weathercode: 1
+}
